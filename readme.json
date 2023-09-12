@@ -1,0 +1,27 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "A sample dependency file for a Git repo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dependency-name": "^1.0.0"
+  },
+  "devDependencies": {
+    "dev-dependency-name": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/your-repo.git"
+  },
+  "keywords": [
+    "sample",
+    "dependency",
+    "git"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

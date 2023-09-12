@@ -1,0 +1,26 @@
+name: Dependency Vulnerability Scanner
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x  # Choose your desired Python version
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt  # Adjust based on your dependency management (e.g., pipenv or poetry)
+
+      - name: Run Dependency Scanner
+        run: safety check --full-report
+
