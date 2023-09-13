@@ -36,6 +36,6 @@
   },
   "Database support": {
     "psycopg2-binary": "2.9.3",
-    "mysql-connector-python": "8.0.27"
+    "mysql-connector-python": "8.0.25"
   }
 }
